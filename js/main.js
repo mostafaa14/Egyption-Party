@@ -1,4 +1,4 @@
-let countDown = new Date("Jul 27 , 2024  03:00:00").getTime();
+let countDown = new Date("Jul 27 , 2026  03:00:00").getTime();
 
 $(".toggle").click(function () {
   $(this).next().slideToggle(500);
@@ -48,26 +48,6 @@ $(".openNav").click(function () {
 $(".closebtn ").click(function () {
   $("#left-menu").animate({ width: "0px" });
 });
-
-
-// function countChar(value, limit) {
-//   let remaining = limit - value.length;
-
-//   remaining = Math.max(0, remaining);
-
-//   console.log(remaining);
-
-//   if (remaining === 0) {
-//     document.querySelector("#chars").innerHTML =
-//       "Your available characters finished";
-//   } else {
-//     document.querySelector("#chars").innerHTML = remaining;
-//   }
-
-//   if (remaining < 0) {
-//     document.querySelector("textarea").value = value.slice(0, limit);
-//   }
-// }
 
 
 function countChar(value, limit) {
